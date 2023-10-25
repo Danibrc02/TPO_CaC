@@ -4,10 +4,11 @@
     margin: 0%; 
     padding: 0%;
     font-family: 'Bubblegum Sans', sans-serif;
+    font-size: 110%;
 }
 
 .header-linea{
-    padding: 2vh 0 2vh 1vw;
+    padding: 0vh 0 2vh 1vw;
     display: inline-block;
     
 }
@@ -39,15 +40,47 @@ h1{
 }
 
 .s1{
-    padding: 38vh;
+    padding-top: 1vh;
     display: grid;
     grid-template-columns: auto auto;
     width: 50vw;
+    place-items: center;
+    margin: auto;
 }
 
 .img-producto{
     width: 20vw;
-    height: 40vh;
+    height: auto;
     margin: 1%;
     border-radius: 8%;
+}
+
+main{
+    padding-top: 18%;
+}
+
+.s2{
+    place-items: center;
+    margin: auto;
+    display: grid;
+
+}
+
+.s3{
+    background-color: cadetblue;
+    border: solid 8px;
+    border-color: aquamarine;
+    border-radius: 25%;
+    padding: 4% 4% 4% 4%;
+    display: grid;
+    grid-template-columns: 20vw 40vw;
+    width: 55vw;
+    place-items: center;
+    margin: 8px;
+    
+}
+
+.articulos{
+    padding-left: 10vw;
+    font-size: 0.8em;
 }
