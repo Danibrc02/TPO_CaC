@@ -16,8 +16,22 @@
             <a class="menu" href="../index.html"><img class="menu-img" src="/img/INICIO.png" alt=""></a>
             <a class="menu" href="market.html"><img class="menu-img" src="/img/MARKET.png" alt=""></a>
             <a class="menu" href="carrito.html"><img class="menu-img" src="/img/CARRITO.png" alt=""></a>
-            <a class="menu" href="quienes_somos.html"><img class="menu-img" src="/img/QUIENES SOMOS.png" alt=""></a>
+            <a class="menu" href="contactanos.html"><img class="menu-img" src="/img/contactanos.png" alt=""></a>
         </nav>
     </header>
+    <main>
+        <div class="grid-block">
+            <form method="post" action='https://formspree.io/f/mjvqlazr'>
+                <fieldset>
+                    <label for="first-name">Ingresa tu nombre: <input id="first-name" name="first-name" type="text" placeholder="Juan Perez" required /></label>
+                    <label for="email">Ingresa tu Email: <input id="email" name="email" type="email" placeholder="juanp@gmail.com" required /></label>
+                    <label for="consulta">Ingresa tu consulta:
+                        <textarea id="consulta" name="consulta" rows="3" cols="30" placeholder="Ingresa tu consulta aqui"></textarea>
+                    </label>
+                    <input type="submit" value="Submit" />
+                </fieldset>
+            </form>
+        </div>
+    </main>
 </body>
 </html>
