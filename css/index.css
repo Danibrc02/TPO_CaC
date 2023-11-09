@@ -44,15 +44,19 @@ h1{
 }
 
 .s1{
-    padding-top: 1vh;
+    padding-top: 0;
     display: grid;
     grid-template-columns: auto auto;
     width: 50vw;
     place-items: center;
     margin: auto;
 }
-
-#item_nombre_index{
+.item_nombre{
+    font-size: 3rem;
+    text-align: center;
+   } 
+    
+.item_nombre_index{
 justify-content: center;
 }
 
@@ -79,12 +83,12 @@ main{
     border: solid 8px;
     border-color: aquamarine;
     border-radius: 25%;
-    padding: 4% 4% 4% 4%;
+    padding: 4% 4% 4% 2%;
     display: grid;
-    grid-template-columns: 20vw 40vw;
+    grid-template-columns: 25vw 30vw;
     width: 55vw;
     place-items: center;
-    margin: 8px;
+    margin: 5px;
     
 }
 
@@ -165,5 +169,3 @@ div[class="grid-block"]{
   height: auto;
   border-radius: 15%;
 }
-
-/*  */
