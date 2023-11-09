@@ -13,10 +13,10 @@
     <header>
         <nav class="header-linea">
             <img class="logo" src="/img/Oso-Aviador-1024x697.png" alt="Osito">
-            <a class="menu" href="../index.html"><img class="menu-img" src="/img/INICIO.png" alt=""></a>
-            <a class="menu" href="market.html"><img class="menu-img" src="/img/MARKET.png" alt=""></a>
-            <a class="menu" href="carrito.html"><img class="menu-img" src="/img/CARRITO.png" alt=""></a>
-            <a class="menu" href="contactanos.html"><img class="menu-img" src="/img/contactanos.png" alt=""></a>
+            <a class="menu" href="../index.html"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="menu-img" src="/img/INICIO.png" alt=""></a>
+            <a class="menu" href="/templates/market.html"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="menu-img" src="/img/MARKET.png" alt=""></a>
+            <a class="menu" href="/templates/carrito.html"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="menu-img" src="/img/CARRITO.png" alt=""></a>
+            <a class="menu" href="/templates/contactanos.html"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="menu-img" src="/img/contactanos.png" alt=""></a>
         </nav>
     </header>
     <main>
@@ -33,5 +33,24 @@
             </form>
         </div>
     </main>
+    <script type="module" src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+      
+        const swiper = new Swiper()
+    </script>
+    <script>
+        function bigImg(x) {
+          x.style.height = "22vh";
+          x.style.width = "auto";
+        }
+        
+        function normalImg(x) {
+          x.style.height = "20vh";
+          x.style.width = "auto";
+        }
+        </script>
+      
 </body>
 </html>
