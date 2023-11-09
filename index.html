@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <title>Hola precioso</title>
 </head>
@@ -15,41 +15,54 @@
     <header>
         <nav class="header-linea">
             <img class="logo" src="/img/Oso-Aviador-1024x697.png" alt="Osito">
-            <a class="menu" href="index.html"><img class="menu-img" src="/img/INICIO.png" alt=""></a>
-            <a class="menu" href="/templates/market.html"><img class="menu-img" src="/img/MARKET.png" alt=""></a>
-            <a class="menu" href="/templates/carrito.html"><img class="menu-img" src="/img/CARRITO.png" alt=""></a>
-            <a class="menu" href="/templates/contactanos.html"><img class="menu-img" src="/img/contactanos.png" alt=""></a>
+            <a class="menu" href="index.html"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="menu-img" src="/img/INICIO.png" alt=""></a>
+            <a class="menu" href="/templates/market.html"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="menu-img" src="/img/MARKET.png" alt=""></a>
+            <a class="menu" href="/templates/carrito.html"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="menu-img" src="/img/CARRITO.png" alt=""></a>
+            <a class="menu" href="/templates/contactanos.html"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="menu-img" src="/img/contactanos.png" alt=""></a>
         </nav>
     </header>
     <main>
-        <div class="s1">
-            <div class="inventario_item">
-                <div class="item_descripcion">
-                    <h2 class="item_nombre" id="texto-api01"></h2>
-                    <img src="/img/010.png" alt="" class="img-producto">                  
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h2 class="item_nombre_index" id="texto-api01"></h2>
+                    <img src="/img/010.png" alt="" class="img-slider">
+                </div>
+                <div class="swiper-slide">
+                    <h2 class="item_nombre_index" id="texto-api02"></h2>
+                    <img src="/img/020.webp" alt="" class="img-slider"> 
+                </div>
+                <div class="swiper-slide">
+                    <h2 class="item_nombre_index" id="texto-api03"></h2>
+                    <img src="/img/030.webp" alt="" class="img-slider"> 
+                </div>
+                <div class="swiper-slide">
+                    <h2 class="item_nombre_index" id="texto-api04"></h2>
+                    <img src="/img/040.webp" alt="" class="img-slider"> 
                 </div>
             </div>
-            <div class="inventario_item">
-                <div class="item_descripcion">
-                    <h2 class="item_nombre" id="texto-api02"></h2>
-                    <img src="/img/020.webp" alt="" class="img-producto"> 
-                </div>
-            </div>
-            <div class="inventario_item">
-                <div class="item_descripcion">
-                    <h2 class="item_nombre" id="texto-api03"></h2>
-                    <img src="/img/030.webp" alt="" class="img-producto"> 
-                </div>
-            </div>
-            <div class="inventario_item">
-                <div class="item_descripcion">
-                    <h2 class="item_nombre" id="texto-api04"></h2>
-                    <img src="/img/040.webp" alt="" class="img-producto"> 
-                </div>
-            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </main>
-    <script src="index.js"></script>
+    <script type="module" src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+      
+        const swiper = new Swiper()
+    </script>
+    <script>
+        function bigImg(x) {
+          x.style.height = "22vh";
+          x.style.width = "auto";
+        }
+        
+        function normalImg(x) {
+          x.style.height = "20vh";
+          x.style.width = "auto";
+        }
+        </script>
+      
 </body>
 </html>
