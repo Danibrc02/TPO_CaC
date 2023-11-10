@@ -241,7 +241,7 @@ div[class="grid-block"]{
     }
     .swiper {
         width: 40vw;
-        height: 40vw;
+        height: 33vw;
         border-radius: 15%;
         margin: 0;
     }
@@ -281,6 +281,6 @@ div[class="grid-block"]{
     }
     .articulos{
         padding-left: 10vw;
-        font-size: 0.8em;
+        font-size: 1.3em;
     }
 }
