@@ -6,39 +6,17 @@
     font-family: 'Bubblegum Sans', sans-serif;
     font-size: 110%;
 }
-
-header{
-    position: fixed;
-}
 .header-linea{
     padding: 0.8vh 0 2vh 1vw;
     margin-top: 0.2vh;
     display: inline-block;
     
 }
-
 .logo{
     width: 18vw;
     height: auto;
     padding-top: 0;
 }
-
-.menu-img{
-    width: 16vw;
-    height: auto;
-    
-} 
-
-header{
-    position: fixed;
-    background-color: cadetblue;
-    width: 100%;
-    height: auto;
-    padding: 0%;
-    margin: 0%;
-    border-radius: 0 0 30% 30%;
-}
-
 h1{
     color: royalblue;
 }
@@ -65,36 +43,6 @@ justify-content: center;
     height: auto;
     margin: 1%;
     border-radius: 8%;
-}
-
-main{
-    padding-top: 18%;
-}
-
-.s2{
-    place-items: center;
-    margin: auto;
-    display: grid;
-
-}
-
-.s3{
-    background-color: cadetblue;
-    border: solid 8px;
-    border-color: aquamarine;
-    border-radius: 25%;
-    padding: 4% 4% 4% 2%;
-    display: grid;
-    grid-template-columns: 25vw 30vw;
-    width: 55vw;
-    place-items: center;
-    margin: 5px;
-    
-}
-
-.articulos{
-    padding-left: 10vw;
-    font-size: 0.8em;
 }
 
 form {
@@ -145,27 +93,194 @@ div[class="grid-block"]{
     height: 57vh;
   }
 
-.swiper {
-    width: 40vw;
-    height: 60vh;
-    border-radius: 15%;
-
-}
-
-.swiper-container {
-    height: 50vh;
  
-} 
 
-.swiper-slide{ 
-  background: cadetblue;
-  font-size: 2.5em;
-  padding-top: 0.8em;
-  text-align: center;
+@media only screen and (max-width: 600px){
+    header{
+        background-color: cadetblue;
+        position: fixed;
+        width: 100%;
+        height: 11vh ;
+        border-radius: 0 0 30% 30%;
+    } 
+    .menu-img{
+        width: 18vw;
+        height: auto;
+    } 
+    main{
+        padding-top: 20vh;
+    }
+    .swiper {
+        width: 70vw;
+        height: 38vh;
+        border-radius: 15%;
+    }
+    .swiper-slide{ 
+        background: cadetblue;
+        font-size: 1.3em;
+        padding-top: 0.8em;
+        text-align: center;
+      }
+    .img-slider{
+        width: 43vw;
+        height: auto;
+        border-radius: 15%;
+      }
+      .swiper-container {
+        height: 50vh;
+     
+    }
+    .s2{
+        place-items: center;
+        margin: auto;
+        display: grid;
+    
+    }
+    
+    .s3{
+        background-color: cadetblue;
+        border: solid 8px;
+        border-color: aquamarine;
+        border-radius: 25%;
+        padding: 4% 4% 4% 2%;
+        display: grid;
+        grid-template-columns: 25vw 30vw;
+        width: 55vw;
+        place-items: center;
+        margin: 5px;
+        
+    }
+    .articulos{
+        padding-left: 10vw;
+        font-size: 0.5em;
+    }
+}
+@media only screen and (min-width: 768px){
+    header{
+        position: fixed;
+        width: 100%;
+        height: 17vh;
+        padding: 0%;
+        margin: 0%;
+        border-radius: 0 0 30% 30%;
+        background-color: cadetblue;
+    }
+    .menu-img{
+        width: 16vw;
+        height: auto;
+        
+    } 
+    main{
+        padding-top: 18%;
+    }
+    .swiper {
+        width: 50vw;
+        height: 50vh;
+        border-radius: 15%;
+        margin-top: 10vh;
+    } 
+    .swiper-slide{ 
+        background: cadetblue;
+        font-size: 2em;
+        padding-top: 0.8em;
+        text-align: center;
+      }
+    .img-slider{
+        width: 30vw;
+        height: auto;
+        border-radius: 15%;
+      }
+      .swiper-container {
+        height: 50vh;
+     
+    }
+    .s2{
+        place-items: center;
+        margin: auto;
+        display: grid;
+    
+    }
+    
+    .s3{
+        background-color: cadetblue;
+        border: solid 8px;
+        border-color: aquamarine;
+        border-radius: 25%;
+        padding: 4% 4% 4% 2%;
+        display: grid;
+        grid-template-columns: 25vw 30vw;
+        width: 55vw;
+        place-items: center;
+        font-size: 1rem;
+        
+    }
+    .articulos{
+        padding-left: 10vw;
+        font-size: 0.8em;
+    }
 }
 
-.img-slider{
-  width: 20vw;
-  height: auto;
-  border-radius: 15%;
+@media only screen and (min-width: 992px){
+    header{
+        position: fixed;
+        background-color: cadetblue;
+        width: 100%;
+        height: auto;
+        padding: 0%;
+        margin: 0%;
+        border-radius: 0 0 30% 30%;
+        flex-flow: row wrap;
+    }
+    .menu-img{
+        width: 16vw;
+        height: auto;
+        
+    } 
+    main{
+        padding-top: 28vh;
+    }
+    .swiper {
+        width: 40vw;
+        height: 40vw;
+        border-radius: 15%;
+        margin: 0;
+    }
+    .swiper-slide{ 
+        background: cadetblue;
+        font-size: 3em;
+        padding-top: 0.8em;
+        text-align: center;
+      }
+    .img-slider{
+        width: 20vw;
+        height: auto;
+        border-radius: 15%;
+      }
+    .swiper-container {
+        height: 50vh;
+      }
+    .s2{
+        place-items: center;
+        margin: auto;
+        display: grid;
+    
+    }
+    
+    .s3{
+        background-color: cadetblue;
+        border: solid 8px;
+        border-color: aquamarine;
+        border-radius: 25%;
+        padding: 4% 4% 4% 2%;
+        display: grid;
+        grid-template-columns: 25vw 30vw;
+        width: 55vw;
+        place-items: center;
+        margin: 5px;
+        
+    }
+    .articulos{
+        padding-left: 10vw;
+        font-size: 0.8em;
+    }
 }
